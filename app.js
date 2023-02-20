@@ -110,6 +110,6 @@ app.put("/product/:id", async (req, res) => {
   }
 });
 
-app.listen(9000, () => {
-  console.log("Server listening on port 9000");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server listening...");
 });
